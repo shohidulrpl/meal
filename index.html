@@ -6,73 +6,73 @@
     <title>Canteen Database</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #2e6876;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            padding: 0;
+            color: #fff;
+            text-align: center;
         }
         .container {
-            text-align: center;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 12px;
             background-color: #ffffff;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px; /* Ensures the container does not stretch too much on large screens */
-            margin: 0 20px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            box-sizing: border-box;
         }
         h1 {
             color: #333;
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 20px;
+            font-weight: bold;
         }
         p {
+            font-size: 18px;
             color: #555;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .button {
             display: inline-block;
             background-color: #007BFF;
             color: #fff;
-            padding: 15px 25px;
-            font-size: 16px;
+            padding: 18px 30px;
+            font-size: 18px;
+            font-weight: bold;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             text-decoration: none;
             cursor: pointer;
             margin: 10px;
-            width: 100%;
-            box-sizing: border-box;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
         }
         .button:hover {
             background-color: #0056b3;
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 25px rgba(0, 123, 255, 0.4);
         }
-
-        /* Mobile-responsive styles */
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0px 3px 8px rgba(0, 123, 255, 0.4);
+        }
+        /* Mobile-responsive styling */
         @media (max-width: 768px) {
             h1 {
-                font-size: 20px;
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
             }
             .button {
-                font-size: 14px;
-                padding: 12px 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 18px;
-            }
-            .container {
-                padding: 20px;
-            }
-            .button {
-                font-size: 14px;
-                padding: 10px 18px;
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+                margin: 10px 0;
             }
         }
     </style>
@@ -80,7 +80,7 @@
 <body>
     <div class="container">
         <h1>Welcome to Chattogram Canteen Database</h1>
-        <p>Click any button to your task.</p>
+        <p>Click any button to perform your task.</p>
         <a href="https://n8n.srv915514.hstgr.cloud/form/8f47aac5-778a-4f5a-99fd-ed8103c47cce" target="_blank">
             <button class="button">Meal Submission</button>
         </a>
