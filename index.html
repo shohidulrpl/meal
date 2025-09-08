@@ -75,17 +75,32 @@
                 margin: 10px 0;
             }
         }
+        /* Hide the Admin Panel button initially */
+        .admin-panel {
+            display: none;
+            color: #fff;
+        }
+        .admin-panel-button {
+            background-color: #A74122; /* New color for Admin Panel button */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Chattogram Canteen Database</h1>
         <p>Click any button to perform your task.</p>
+        
+        <!-- Meal Submission button -->
         <a href="https://n8n.srv915514.hstgr.cloud/form/8f47aac5-778a-4f5a-99fd-ed8103c47cce" target="_blank">
             <button class="button">Meal Submission</button>
         </a>
-        <a href="https://n8n.srv915514.hstgr.cloud/form/83e440b1-9205-499b-a34d-4dae6f441a6a" target="_blank">
-            <button class="button">Admin Panel</button>
+
+        <!-- "More" option which reveals the Admin Panel button -->
+        <button class="button" onclick="document.querySelector('.admin-panel').style.display='inline-block'; this.style.display='none';">More</button>
+
+        <!-- Admin Panel button (initially hidden) -->
+        <a href="https://n8n.srv915514.hstgr.cloud/form/83e440b1-9205-499b-a34d-4dae6f441a6a" target="_blank" class="admin-panel">
+            <button class="button admin-panel-button">Admin Panel</button>
         </a>
     </div>
 </body>
