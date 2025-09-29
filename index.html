@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-widh, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CTG Canteen Portal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
         /* --- OCEAN WAVE BACKGROUND --- */
         html, body { 
             height: 100%; 
+            overflow: hidden; /* ADDED THIS TO PREVENT SCROLLING ON THE ROOT ELEMENT */
         }
 
         body {
@@ -24,7 +25,8 @@
             text-align: center;
             color: #fff;
             background: radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-            overflow: hidden;
+            overflow: hidden; /* This was already here, but is essential */
+            position: relative; /* ADDED THIS TO HELP CONTAIN ABSOLUTE ELEMENTS */
         }
 
         .ocean { 
